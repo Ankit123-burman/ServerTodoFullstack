@@ -16,6 +16,7 @@ app.use(cors({
     origin: process.env.URL,
     methods: ['GET', 'POST', 'PUT', 'DELETE',"OPTIONS"],
     credentials: true,
+    allowedHeaders: ['Content-Type', 'Authorization'],
 }));
 
 mongoose
